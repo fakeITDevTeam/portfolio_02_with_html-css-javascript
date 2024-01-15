@@ -402,4 +402,122 @@ section {
 }
 
 /* portfolio gallery */
+#portfolio h2 {
+  padding-top: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
+.portfolio {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio ul li {
+  list-style: none;
+  background: var(--primary-color);
+  color: var(--light);
+  padding: 10px 20px;
+  margin-right: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.portfolio ul li.active {
+  background: var(--primary-color-variant);  
+}
+
+#portfolio .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#portfolio .gallery .box {
+  position: relative;
+  height: 230px;
+  width: 230px;
+  margin: 0.5rem;
+  display: block;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#portfolio .gallery .box.hide {
+  display: none;  
+}
+
+#portfolio .gallery .box.active {
+  animation: scaleIn 0.2s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#portfolio .gallery .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#portfolio .gallery .box .title span {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#portfolio .gallery .box .title {
+  position: absolute;
+  bottom: 5%;
+  left: 100%;
+  width: 100%;
+  height: 15%;
+  padding: 4px;
+  background: var(--light);
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+#portfolio .gallery .box:hover .title {
+  left: 0;
+  text-overflow: ellipsis;  
+}
+
+#portfolio .gallery .box .title i {
+  font-size: 1rem;
+}
+
+/* testimonial */

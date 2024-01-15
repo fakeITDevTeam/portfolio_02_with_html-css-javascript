@@ -73,4 +73,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // open the first tab by default
   tabButtons[0].click();
-})
+});
+
+
+// portfolio
+
+let list = document.querySelectorAll(".portfolio .list");
+let item = document.querySelectorAll(".box");
+
+for (let x = 0; x < list.length; x++) {
+  list[x].addEventListener("click", function () {
+    for (let y = 0; y < list.length; y++) {
+      list[y].classList.remove("active");
+    }
+    this.classList.add("active");
+
+    let dataFilter = this.getAttribute("data-filter");
+
+    for (let z = 0; z < item.length; z++) {
+      item[z].classList.remove("active");
+      item[z].classList.add("hide");
+
+      if (item[z].getAttribute("data-item") == dataFilter || dataFilter == "all") {
+        item[z].classList.remove("hide");
+        item[z].classList.add("active");
+      }
+    }
+  })
+}
