@@ -101,3 +101,21 @@ for (let x = 0; x < list.length; x++) {
     }
   })
 }
+
+// testimonials
+
+let userTexts = document.getElementsByClassName("user_text");
+let userPics = document.getElementsByClassName("user_pic");
+
+function Review() {
+  for (userPic of userPics) {
+    userPic.classList.remove("active");
+  }
+  for (userText of userTexts) {
+    userText.classList.remove("active");
+  }
+  let k = Array.from(userPics).indexOf(event.target);
+  // let k = Array.from(userPics).indexOf(EventTarget);
+  userPics[k].classList.add("active");
+  userTexts[k].classList.add("active");
+}
