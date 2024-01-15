@@ -607,3 +607,118 @@ section {
   border: 3px solid var(--primary-color-variant);
 }
 
+/* contact */
+
+#contact .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 2rem; */
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contact_details {
+  position: relative;
+  width: 100%;
+}
+
+.contact_details .inner_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 1rem;
+}
+
+.contact_details .inner_row .bx {
+  padding: 20px;
+  background: var(--light);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact_details .inner_row .bx span {
+  color: var(--primary-color);
+  font-weight: 600;  
+}
+
+.contact_details .map {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 330px;
+}
+
+.contact_form {
+  position: relative;
+  border-color: var(--light);
+  width: 100%;
+  padding: 2rem;
+  height: 470px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);  
+}
+
+.contact_form h2 {
+  text-align: center;  
+}
+
+.contact_form form {
+  margin: 1rem;
+}
+
+.contact_form .input_field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.contact_form input {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.contact_form textarea {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  outline: none;
+  background: var(--light);
+  color: var(--dark);
+  resize: none;
+}
+
+.contact_form .send {
+  cursor: pointer;
+  border: none;
+  background: var(--primary-color);
+  color: var(--light);
+  transition: 0.2s ease-in-out;
+}
+
+.contact_form .send:hover {
+  background: var(--primary-color-variant);
+  color: var(--light);
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 12px 0;
+  background: var(--primary-color);
+  color: var(--light);
+}
+
