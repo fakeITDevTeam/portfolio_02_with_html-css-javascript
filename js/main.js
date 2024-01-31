@@ -4,7 +4,8 @@ const sections = document.querySelectorAll('section:not(no-link');
 const navbarLinks = navbar.querySelectorAll('ul li a');
 
 function toggleSticky() {
-  if (window.scrollY > 100) {
+  var media = window.matchMedia("(min-width: 601px)");
+  if (window.scrollY > 100 && media.matches) {
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');
@@ -44,6 +45,16 @@ window.addEventListener('resize', handleScrollAndResize);
 // initial call to set the initial state
 handleScrollAndResize();
 
+// Mobile navigation indicator start
+const nav_list = document.querySelectorAll(".nav .list");
+
+function activeLink() {
+  nav_list.forEach((item) => item.classList.remove("active"));
+  this.classList.add("active");
+}
+nav_list.forEach((item) => item.addEventListener("click", activeLink));
+// Mobile navigation indicator end
+
 // About section tabs
 document.addEventListener("DOMContentLoaded", function () {
   const tabButtons = document.querySelectorAll(".tab-button");
@@ -77,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // portfolio
-
 let list = document.querySelectorAll(".portfolio .list");
 let item = document.querySelectorAll(".box");
 

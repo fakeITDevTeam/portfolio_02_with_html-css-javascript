@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-</head>
-<body>
-  <!--Navbar-->
-  <nav class="navbar" id="navbar">
-    <div class="logo">Portfolio.</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar" id="navbar">
+      <div class="logo">Portfolio.</div>
       <ul>
         <li><a href="#home" class="open">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -19,264 +25,401 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-  </nav>
-  <div class="container">
-    <!-- Home -->
-    <section id="home">
-      <div class="row">
-        <div class="text">
-          <h6>Hello</h6>
-          <h2>I'm <span>Kukuh</span> Prasetiyo</h2>
-          <h5>Full-Stack Developer</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="btn_group">
-            <a href="#" class="download">Download CV</a>
-            <a href="#contact" class="talk">Let's Talk</a>
+    </nav>
+    <div class="container">
+      <!-- Home -->
+      <section id="home">
+        <div class="row">
+          <div class="text">
+            <h6>Hello</h6>
+            <h2>I'm <span>Kukuh</span> Prasetiyo</h2>
+            <h5>Full-Stack Developer</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="btn_group">
+              <a href="#" class="download">Download CV</a>
+              <a href="#contact" class="talk">Let's Talk</a>
+            </div>
+            <div class="social_btns">
+              <a href="https://github.com/___carnival" target="_blank"
+                ><div class="fa-brands fa-github"></div
+              ></a>
+              <a href="https://linkedin.com/___carnival" target="_blank"
+                ><div class="fa-brands fa-linkedin"></div
+              ></a>
+              <a href="https://instagram.com/fakeitdevteam" target="_blank"
+                ><div class="fa-brands fa-instagram"></div
+              ></a>
+            </div>
           </div>
-          <div class="social_btns">
-            <a href="https://github.com/___carnival" target="_blank"><div class="fa-brands fa-github"></div></a>
-            <a href="https://linkedin.com/___carnival" target="_blank"><div class="fa-brands fa-linkedin"></div></a>
-            <a href="https://instagram.com/fakeitdevteam" target="_blank"><div class="fa-brands fa-instagram"></div></a>
-          </div>                                       
-        </div>
-        <div class="img">
+          <div class="img">
             <img src="images/1.png" alt="satu" />
-        </div> 
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="row">
-        <div class="image">
-          <img src="images/1.png" alt="">
-        </div>
-        <div class="text">
-          <h2>About Me</h2>
-          <p>Hi, i'm Kukuh Prasetiyo, a Full-Stack Web Developer having extraordinary skills in HTML, CSS, Javascript, Asp.Net Core, Angular, Node.js, and Nest.js</p>
-          <div class="tabs">
-            <button class="tab-button active" data-tab="tab1">Skills</button>
-            <button class="tab-button" data-tab="tab2">Education</button>
-            <button class="tab-button" data-tab="tab3">Experience</button>
-          </div>
-
-          <!-- Skills -->
-          <div class="tab-content" id="tab1">
-            <span>UI/UX</span>
-            <p>Designing Web & App Interfaces</p>
-
-            <span>Web Development</span>
-            <p>Creating Custom Websites</p>
-
-            <span>App Development</span>
-            <p>Building Android Applications</p>
-          </div>
-
-          <!-- Education -->
-          <div class="tab-content" id="tab2">
-            <span>2023 - Current</span>
-            <p>Working on innovative tech solutions</p>
-
-            <span>2021 - 2023</span>
-            <p>Exploring new frontiers in digital design</p>
-
-            <span>2019 - 2021</span>
-            <p>Delving into cutting-edge web technologies</p>
-
-            <span>2017 - 2019</span>
-            <p>Creating visual brand identities</p>
-          </div>
-
-          <!-- Experience -->
-          <div class="tab-content" id="tab3">
-            <span>2023 - Current</span>
-            <p>Diploma in artificial intelligence</p>
-
-            <span>2022</span>
-            <p>Bachelor's degree in Computer Science</p>
-
-            <span>2019</span>
-            <p>Software Engineer</p>
-
-            <span>2017</span>
-            <p>Diplomma in Graphics Designing</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services -->
-    <section id="services">
-      <h2>Services</h2>
+      <!-- About -->
+      <section id="about">
+        <div class="row">
+          <div class="img">
+            <img src="images/1.png" alt="" />
+          </div>
+          <div class="text">
+            <h2>About Me</h2>
+            <p>
+              Hi, i'm Kukuh Prasetiyo, a Full-Stack Web Developer having
+              extraordinary skills in HTML, CSS, Javascript, Asp.Net Core,
+              Angular, Node.js, and Nest.js
+            </p>
+            <div class="tabs">
+              <button class="tab-button active" data-tab="tab1">Skills</button>
+              <button class="tab-button" data-tab="tab2">Education</button>
+              <button class="tab-button" data-tab="tab3">Experience</button>
+            </div>
 
-      <div class="row">
-        <div class="service_box">
-          <h3>01</h3>
-          <h4>UI/UX</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel reiciendis distinctio odio, optio, sint ipsam non iste totam illum quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur cumque!</p>
-          <i class="fas fa-palette"></i>
-        </div>
-        <div class="service_box">
-          <h3>02</h3>
-          <h4>Video Editing</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel reiciendis distinctio odio, optio, sint ipsam non iste totam illum quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur cumque!</p>
-          <i class="fas fa-photo-video"></i>
-        </div>
-        <div class="service_box">
-          <h3>03</h3>
-          <h4>Web Development</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel reiciendis distinctio odio, optio, sint ipsam non iste totam illum quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur cumque!</p>
-          <i class="fas fa-globe"></i>
-        </div>
-        <div class="service_box">
-          <h3>04</h3>
-          <h4>SEO</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel reiciendis distinctio odio, optio, sint ipsam non iste totam illum quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur cumque!</p>
-          <i class="fas fa-search"></i>
-        </div>
-        <div class="service_box">
-          <h3>05</h3>
-          <h4>App Development</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel reiciendis distinctio odio, optio, sint ipsam non iste totam illum quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur cumque!</p>
-          <i class="fas fa-mobile-alt"></i>
-        </div>
-        <div class="service_box">
-          <h3>06</h3>
-          <h4>Digital Marketing</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel reiciendis distinctio odio, optio, sint ipsam non iste totam illum quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur cumque!</p>
-          <i class="fas fa-bullhorn"></i>
-        </div>
-      </div>
+            <!-- Skills -->
+            <div class="tab-content" id="tab1">
+              <span>UI/UX</span>
+              <p>Designing Web & App Interfaces</p>
 
-    </section>
+              <span>Web Development</span>
+              <p>Creating Custom Websites</p>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio">
+              <span>App Development</span>
+              <p>Building Android Applications</p>
+            </div>
+
+            <!-- Education -->
+            <div class="tab-content" id="tab2">
+              <span>2023 - Current</span>
+              <p>Working on innovative tech solutions</p>
+
+              <span>2021 - 2023</span>
+              <p>Exploring new frontiers in digital design</p>
+
+              <span>2019 - 2021</span>
+              <p>Delving into cutting-edge web technologies</p>
+
+              <span>2017 - 2019</span>
+              <p>Creating visual brand identities</p>
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-content" id="tab3">
+              <span>2023 - Current</span>
+              <p>Diploma in artificial intelligence</p>
+
+              <span>2022</span>
+              <p>Bachelor's degree in Computer Science</p>
+
+              <span>2019</span>
+              <p>Software Engineer</p>
+
+              <span>2017</span>
+              <p>Diplomma in Graphics Designing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <h2>Services</h2>
+
+        <div class="row">
+          <div class="service_box">
+            <h3>01</h3>
+            <h4>UI/UX</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel
+              reiciendis distinctio odio, optio, sint ipsam non iste totam illum
+              quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur
+              cumque!
+            </p>
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="service_box">
+            <h3>02</h3>
+            <h4>Video Editing</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel
+              reiciendis distinctio odio, optio, sint ipsam non iste totam illum
+              quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur
+              cumque!
+            </p>
+            <i class="fas fa-photo-video"></i>
+          </div>
+          <div class="service_box">
+            <h3>03</h3>
+            <h4>Web Development</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel
+              reiciendis distinctio odio, optio, sint ipsam non iste totam illum
+              quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur
+              cumque!
+            </p>
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="service_box">
+            <h3>04</h3>
+            <h4>SEO</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel
+              reiciendis distinctio odio, optio, sint ipsam non iste totam illum
+              quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur
+              cumque!
+            </p>
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="service_box">
+            <h3>05</h3>
+            <h4>App Development</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel
+              reiciendis distinctio odio, optio, sint ipsam non iste totam illum
+              quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur
+              cumque!
+            </p>
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="service_box">
+            <h3>06</h3>
+            <h4>Digital Marketing</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel
+              reiciendis distinctio odio, optio, sint ipsam non iste totam illum
+              quae, ducimus quos aspernatur? Alias dolor nam corporis pariatur
+              cumque!
+            </p>
+            <i class="fas fa-bullhorn"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+          <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="ui">UI/UX</li>
+            <li class="list" data-filter="graphics">Graphics Design</li>
+            <li class="list" data-filter="web">Website Development</li>
+            <li class="list" data-filter="app">App Development</li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <!-- using bootstrap default animation classes -->
+          <div class="box" data-item="ui">
+            <img src="images/1c.png" alt="" />
+            <a href="images/1c.png" target="_blank" class="title">
+              <span>Sidebar Design</span>&nbsp;<i
+                class="fa-solid fa-up-right-from-square fa-fade"
+              ></i>
+            </a>
+          </div>
+          <div class="box" data-item="web">
+            <img src="images/1c.png" alt="" />
+            <a href="images/1c.png" target="_blank" class="title">
+              <span>Ticket Booking</span>&nbsp;<i
+                class="fa-solid fa-up-right-from-square fa-fade"
+              ></i>
+            </a>
+          </div>
+          <div class="box" data-item="app">
+            <img src="images/1c.png" alt="" />
+            <a href="images/1c.png" target="_blank" class="title">
+              <span>App Design</span>&nbsp;<i
+                class="fa-solid fa-up-right-from-square fa-fade"
+              ></i>
+            </a>
+          </div>
+          <div class="box" data-item="ui">
+            <img src="images/1c.png" alt="" />
+            <a href="images/1c.png" target="_blank" class="title">
+              <span>Controller Design</span>&nbsp;<i
+                class="fa-solid fa-up-right-from-square fa-fade"
+              ></i>
+            </a>
+          </div>
+          <div class="box" data-item="web">
+            <img src="images/1c.png" alt="" />
+            <a href="images/1c.png" target="_blank" class="title">
+              <span>Attendance Dashboard</span>&nbsp;<i
+                class="fa-solid fa-up-right-from-square fa-fade"
+              ></i>
+            </a>
+          </div>
+          <div class="box" data-item="graphics">
+            <img src="images/1c.png" alt="" />
+            <a href="images/1c.png" target="_blank" class="title">
+              <span>Graphics Design</span>&nbsp;<i
+                class="fa-solid fa-up-right-from-square fa-fade"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="extras" class="no-link">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+          <div class="testimonial_text">
+            <div class="user_text">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur sapiente velit sint ex magni nam tempora repellat
+                repellendus. Alias doloribus soluta, voluptatum autem ipsam
+                eveniet laudantium rerum aliquam necessitatibus optio.
+              </p>
+              <span>JOHN DOE CEO MCNS</span>
+            </div>
+            <div class="user_text active">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur sapiente velit sint ex magni nam tempora repellat
+                repellendus. Alias doloribus soluta, voluptatum autem ipsam
+                eveniet laudantium rerum aliquam necessitatibus optio.
+              </p>
+              <span>JOHN DOE CEO MCNS</span>
+            </div>
+            <div class="user_text">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur sapiente velit sint ex magni nam tempora repellat
+                repellendus. Alias doloribus soluta, voluptatum autem ipsam
+                eveniet laudantium rerum aliquam necessitatibus optio.
+              </p>
+              <span>JOHN DOE CEO MCNS</span>
+            </div>
+          </div>
+          <div class="testimonial_pics">
+            <img
+              src="images/2.png"
+              alt=""
+              class="user_pic"
+              onclick="Review()"
+            />
+            <img
+              src="images/2.png"
+              alt=""
+              class="user_pic active"
+              onclick="Review()"
+            />
+            <img
+              src="images/2.png"
+              alt=""
+              class="user_pic"
+              onclick="Review()"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="row">
+          <div class="contact_details">
+            <div class="inner_row">
+              <div class="bx"><span>Number</span><br />+62 123 456789</div>
+              <div class="bx"><span>Email</span><br />dev5544455@gmail.com</div>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253553.56083526378!2d110.70316938119474!3d-6.797281202560176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c532064fbb8f%3A0x3027a76e352bb30!2sKudus%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1705302718355!5m2!1sen!2sid"
+              class="map"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact_form">
+            <h2>Contact Us</h2>
+            <form action="">
+              <div class="input_field">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="input_field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required />
+              </div>
+              <div class="input_field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <input type="submit" value="Send" class="send" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Mobile navigation -->
+    <div class="mobile_nav">
+      <div class="nav">
         <ul>
-          <li class="list active" data-filter="all">All</li>
-          <li class="list" data-filter="ui">UI/UX</li>
-          <li class="list" data-filter="graphics">Graphics Design</li>
-          <li class="list" data-filter="web">Website Development</li>
-          <li class="list" data-filter="app">App Development</li>
+          <li class="list active">
+            <a href="#home">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#about">
+              <span class="icon"
+                ><ion-icon name="information-circle-outline"></ion-icon
+              ></span>
+              <span class="text">About</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#services">
+              <span class="icon"
+                ><ion-icon name="build-outline"></ion-icon
+              ></span>
+              <span class="text">Services</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#portfolio">
+              <span class="icon"><ion-icon name="bag-outline"></ion-icon></span>
+              <span class="text">Portfolio</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#contact">
+              <span class="icon"
+                ><ion-icon name="call-outline"></ion-icon
+              ></span>
+              <span class="text">Contact</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
         </ul>
       </div>
-      <div class="gallery">
-        <!-- using bootstrap default animation classes -->
-        <div class="box" data-item="ui">
-          <img src="images/1c.png" alt="" />
-          <a href="images/1c.png" target="_blank" class="title">
-            <span>Sidebar Design</span>&nbsp;<i class="fa-solid fa-up-right-from-square fa-fade"></i>
-          </a>
-        </div>
-        <div class="box" data-item="web">
-          <img src="images/1c.png" alt="" />
-          <a href="images/1c.png" target="_blank" class="title">
-            <span>Ticket Booking</span>&nbsp;<i class="fa-solid fa-up-right-from-square fa-fade"></i>
-          </a>
-        </div>
-        <div class="box" data-item="app">
-          <img src="images/1c.png" alt="" />
-          <a href="images/1c.png" target="_blank" class="title">
-            <span>App Design</span>&nbsp;<i class="fa-solid fa-up-right-from-square fa-fade"></i>
-          </a>
-        </div>
-        <div class="box" data-item="ui">
-          <img src="images/1c.png" alt="" />
-          <a href="images/1c.png" target="_blank" class="title">
-            <span>Controller Design</span>&nbsp;<i class="fa-solid fa-up-right-from-square fa-fade"></i>
-          </a>
-        </div>
-        <div class="box" data-item="web">
-          <img src="images/1c.png" alt="" />
-          <a href="images/1c.png" target="_blank" class="title">
-            <span>Attendance Dashboard</span>&nbsp;<i class="fa-solid fa-up-right-from-square fa-fade"></i>
-          </a>
-        </div>
-        <div class="box" data-item="graphics">
-          <img src="images/1c.png" alt="" />
-          <a href="images/1c.png" target="_blank" class="title">
-            <span>Graphics Design</span>&nbsp;<i class="fa-solid fa-up-right-from-square fa-fade"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <!-- Testimonials -->
-    <section id="extras" class="no-link">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-        <div class="testimonial_text">
-          <div class="user_text">
-            <i class="fas fa-quote-left"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente velit sint ex magni nam tempora repellat repellendus. Alias doloribus soluta, voluptatum autem ipsam eveniet laudantium rerum aliquam necessitatibus optio.</p>
-            <span>JOHN DOE CEO MCNS</span>
-          </div>
-          <div class="user_text active">
-            <i class="fas fa-quote-left"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente velit sint ex magni nam tempora repellat repellendus. Alias doloribus soluta, voluptatum autem ipsam eveniet laudantium rerum aliquam necessitatibus optio.</p>
-            <span>JOHN DOE CEO MCNS</span>
-          </div>
-          <div class="user_text">
-            <i class="fas fa-quote-left"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente velit sint ex magni nam tempora repellat repellendus. Alias doloribus soluta, voluptatum autem ipsam eveniet laudantium rerum aliquam necessitatibus optio.</p>
-            <span>JOHN DOE CEO MCNS</span>
-          </div>
-        </div>
-        <div class="testimonial_pics">
-          <img src="images/2.png" alt="" class="user_pic" onclick="Review()" />
-          <img src="images/2.png" alt="" class="user_pic active" onclick="Review()" />
-          <img src="images/2.png" alt="" class="user_pic" onclick="Review()" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="row">
-        <div class="contact_details">
-          <div class="inner_row">
-            <div class="bx">
-              <span>Number</span><br />+62 123 456789
-            </div>
-            <div class="bx">
-              <span>Email</span><br />dev5544455@gmail.com
-            </div>
-          </div>
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253553.56083526378!2d110.70316938119474!3d-6.797281202560176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c532064fbb8f%3A0x3027a76e352bb30!2sKudus%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1705302718355!5m2!1sen!2sid" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contact_form">
-          <h2>Contact Us</h2>
-          <form action="">
-            <div class="input_field">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="input_field">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Email" required>
-            </div>
-            <div class="input_field">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Message" required></textarea>
-            </div>
-            <input type="submit" value="Send" class="send" />
-          </form>
-        </div>
-      </div>
-    </section>
-
-  </div>
-  
-  <!-- Footer -->
-  <footer>Copyright &copy; EMBOSSKA | 2024 All rights reserved.</footer>
-  <script src="js/main.js"></script>
-</body>
+    <!-- Footer -->
+    <footer>Copyright &copy; EMBOSSKA | 2024 All rights reserved.</footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
